@@ -5,4 +5,15 @@
 5.git bash 命令框中输入 git init // 初始化git 在对应的文件夹下会生成一个.git 文件
 6.git bash 命令框中输入 git remote add origin git@github.com:liaoyangxin/gitTest01.git     // git remote add origin git@github.com:基本都可以固定这样写 origin是远程仓库的意思； liaoyangxin 是你git仓库的名称（Owner）；gitTest01是你项目的名称
 7.git pull git@github.com:liaoyangxin/gitTest01.git // 将仓库的文件下载到本地  本地就会多一个README.md文件因为在创建项目的时候 勾选了 Add a README file 就相当于提交了一次
-
+8.添加要上传的文件：
+	【git add . 】（后面加一个点，是想要提交所有文件，如果提交指定的文件，可以写文件名）
+9、提交上传文件：
+	【 git commit -m “这里写下你自己的记录本次提交内容的信息”】
+	（-m后面跟提示信息，这个提示信息是一定要写的，不仅是规则，同时也方便我们记录我们提交的过程，写清晰为什么提交或修改了什么是非常有用的）
+10.推送远程仓库上去：
+	git push git@github.com:liaoyangxin/gitTest01.git
+	
+现在就基本上可以使用了，每次增加了新文件就先add，然后commit，如果只是改了文件的内容，只执行commit就行了，当然最后一步都是要执行push，把所以改变推送到我们的github上去托管。
+（推送也可以用命令【git push -u origin master】
+把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。
+由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。)
