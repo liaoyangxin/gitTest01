@@ -1,0 +1,8 @@
+1.在浏览器中登录github账号并创建一个项目，注意：要选中 Add a README file 选项
+2.（本地安装了git.exe的情况。如果没按装直接下载一个安装就是：http://git-scm.com/downloads）
+3.在本地要存放git文件的地方创建对应的文件夹
+4.选中该文件夹右键选择 Git Bash Here  会出现一个git bash 命令框
+5.git bash 命令框中输入 git init // 初始化git 在对应的文件夹下会生成一个.git 文件
+6.git bash 命令框中输入 git remote add origin git@github.com:liaoyangxin/gitTest01.git     // git remote add origin git@github.com:基本都可以固定这样写 origin是远程仓库的意思； liaoyangxin 是你git仓库的名称（Owner）；gitTest01是你项目的名称
+7.git pull git@github.com:liaoyangxin/gitTest01.git // 将仓库的文件下载到本地  本地就会多一个README.md文件因为在创建项目的时候 勾选了 Add a README file 就相当于提交了一次
+
